@@ -64,8 +64,8 @@ public class Main
 			}
 
 			// CHANGE TO BREADTH FIRST SEARCH
-			Node depLim = BreadthFirst.pathFinder(rootNode);
-		 //BreadthFirst.printSolution(depLim);
+			Node bfs = BreadthFirst.pathFinder(rootNode);
+			BreadthFirst.printSolution(bfs);
 		}
 		else if (algorithm == 2) // Depth limited search
 		{
@@ -104,8 +104,8 @@ public class Main
 					break;
 			}
 			// CHANGE TO ITERATIVE DEEPENING
-			// Node depLim = DepthLimited.findPath(rootNode);
-			// DepthLimited.printSolution(depLim);
+			Node iterDeep = IterativeDeepening.findPath(rootNode);
+			IterativeDeepening.printSolution(iterDeep);
 		}
 		else if (algorithm == 4) // A* with misplaced tiles
 		{
@@ -124,9 +124,7 @@ public class Main
 					break;
 			}
 
-			// CHANGE TO A*
-			// Node depLim = DepthLimited.findPath(rootNode);
-			// DepthLimited.printSolution(depLim);
+			AStarMisplacedTiles test = new AStarMisplacedTiles(rootNode);
 		}
 		else if (algorithm == 5) // A* with Manhattan distance
 		{
