@@ -118,7 +118,7 @@ public class DepthLimited {
 	public static void printPath(Node last) {
 		if (last != null) {
 			printPath(last.parent);
-			System.out.println("Level " + last.level);
+			System.out.println("\nLevel " + last.level);
 			print2D(last.matrix);
 		}
 	}
