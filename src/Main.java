@@ -64,8 +64,8 @@ public class Main
 			}
 
 			// CHANGE TO BREADTH FIRST SEARCH
-			// Node depLim = DepthLimited.findPath(rootNode);
-			// DepthLimited.printSolution(depLim);
+			Node depLim = BreadthFirst.pathFinder(rootNode);
+		 //BreadthFirst.printSolution(depLim);
 		}
 		else if (algorithm == 2) // Depth limited search
 		{
